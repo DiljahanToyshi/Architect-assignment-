@@ -3,17 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     max-width: 900px;
-    height: 60px;
-    padding: 0 25px;
-    margin: 0 auto 0 auto;
+    height: 80px;
+    padding: 0 5px;
+    margin: 0 auto;
    
 }
 
 ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 
     /* flex-wrap: wrap; */
@@ -55,9 +56,9 @@ ul {
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
 
-    padding-left: 190px;
+    padding-left: 15px;
 }
 
 .pic {
@@ -85,6 +86,7 @@ ul {
 /* third-section */
 .third-part {
     display: flex;
+   
     gap: 80px;
     width: 708px;
     height: 600px;
@@ -203,6 +205,7 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
+   
     .first-Container {
         width: 605px;
 
@@ -217,24 +220,22 @@ ul {
 
 
     .banner {
-        max-width: 100%;
-        margin-left: 10px;
+        max-width: 80%;
+       
     }
 
     .part-two {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
     }
 
     .img {
+        grid-template-columns: repeat(2, 1fr);
         height: 30%px;
-    }
-
-    .pic {
-        width: 0px;
-        height: 100px;
+        width: 600px;
         max-width: 100%;
-
+        padding-top: 10px;
+        padding-left: 0px;
     }
 
     .article-box {
@@ -244,6 +245,7 @@ ul {
 
     .third-part {
 
+
         gap: 80px;
         width: 50px;
 
@@ -251,8 +253,8 @@ ul {
         margin: 100px 0 0 20px;
     }
 
-    .second-pic {
-        width: 200px;
+    /* .second-pic {
+        width: 200px; */
     }
 
     .title-container {
@@ -280,11 +282,8 @@ ul {
         max-width: 100%;
         text-align: center;
         margin: 100px 0 0 0px;
-        padding: 2px 0 0 60px;
+        padding: 2px 0 0 30px;
     }
 
 }
 
-.hide {
-    display: none;
-}
